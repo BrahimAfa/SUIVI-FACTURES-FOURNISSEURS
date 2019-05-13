@@ -26,8 +26,8 @@ namespace SUIVI_FACTURES_FOURNISSEURS
             con.Open();
 
             dr = cmd.ExecuteReader();
-            if (dr.HasRows)
-                isValid = true;
+            
+            isValid = dr.HasRows
 
             dr.Close();
             con.Close();
